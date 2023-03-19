@@ -2,7 +2,7 @@
 
 # you should execute this script with sudo privileges like "sudo ./configure-mysql.py"
 # if you execute this script from the shell you should install mysql-connector-python
-# call "pip install mysql-connector-python"
+# call "pip3 install mysql-connector-python"
 
 import mysql.connector
 
@@ -11,13 +11,13 @@ def main():
     root_user = 'root'
     password = 'userubuntu'
     localhost = 'localhost'
-    db = 'mail'
+    dbname = 'mail'
     new_user = 'mail_admin'
     new_user_pass = 'mail_admin_password'
 
-    create_database(root_user, password, localhost, db)
-    create_user(root_user, password, localhost, db, new_user, new_user_pass)
-    create_domain_tables(root_user, password, localhost, db)
+    create_database(root_user, password, localhost, dbname)
+    create_user(root_user, password, localhost, dbname, new_user, new_user_pass)
+    create_domain_tables(root_user, password, localhost, dbname)
 
 
 def create_database(root_user, password, host, database_name):
