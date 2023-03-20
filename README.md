@@ -1,4 +1,4 @@
-This repo contains the scripts to configure mail server on postfix and dovecot
+This repo contains the scripts to configure mail server on postfix and dovecot on Ubuntu
 
 Before mail server installation you need:
  - an authoritative DNS server with configured MX record for your domain
