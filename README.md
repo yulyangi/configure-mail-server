@@ -21,13 +21,13 @@ You should specify vars in these scripts:
   vmailgroup # group of vmailuser
   mydomain   # your domain with MX, PTR and TXT records
   
-Do not change these vars if you did not change tables in mysql mail database
-  querry_domain
-  querry_forwardings
-  querry_mailboxes
-  querry_email 
+Do not change these vars if you did not change the tables in mysql mail database
+  - querry_domain
+  - querry_forwardings
+  - querry_mailboxes
+  - querry_email 
 
-Befor executing any script you should read the comments in the script
+Before executing any script you should read the comments in the script
 
 After executing all scripts you should add users to the mail database via phpMyAdmin (if it was configured on this server) or via mysql command line running these commands:
   - USE mail;
