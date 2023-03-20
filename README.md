@@ -1,6 +1,12 @@
 This repo contains the scripts to configure mail server on postfix and dovecot
 
-You need to run scripts in this sequence:
+Before mail server installation you need:
+ - an authoritative DNS server with configured MX record for your domain
+ - the reverse DNS (PTR record) needs to be configured as well
+ - MySQL server as running and the root access to it
+ - SSL or TLS sertificate for your mail server (you can use the sertificate for your https connection)
+
+You need to run the scripts in this sequence:
   - 0-configure-postfix.sh
   - configure-mysql.py
   - 1-configure-saslauth.sh
