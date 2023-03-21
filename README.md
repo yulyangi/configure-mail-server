@@ -13,13 +13,13 @@ You need to run the scripts in this sequence:
   - 2-configure-dovecot.sh 
 
 You should specify vars in these scripts:
-  user       # your mail admin user in mysql
-  password   # password for mail admin user
-  dbname     # name of mysql database where will be stored emails
-  host       # localhost or 127.0.0.1
-  vmailuser  # user on your mail server for handling 
-  vmailgroup # group of vmailuser
-  mydomain   # your domain with MX, PTR and TXT records
+  - user       # your mail admin user in mysql
+  - password   # password for mail admin user
+  - dbname     # name of mysql database where will be stored emails
+  - host       # localhost or 127.0.0.1
+  - vmailuser  # user on your mail server for handling 
+  - vmailgroup # group of vmailuser
+  - mydomain   # your domain with MX, PTR and TXT records
   
 Do not change these vars if you did not change the tables in mysql mail database
   - querry_domain
